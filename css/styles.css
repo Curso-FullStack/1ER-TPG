@@ -38,3 +38,85 @@ justify-content: flex-end;}
 .nav-1-level{background-color: #233031 }
 
 .nav-2-level{background-color: #92BFB1;}
+
+
+.contentItemCarrusel {
+    height: 200px;
+    overflow: hidden;
+
+
+}
+
+
+.item-carrusel {
+    height: 200px;
+    background-color: red;
+    position: relative;
+}
+
+.tarjeta-carrusel {
+    height: 100%;
+    /* Otros estilos para la tarjeta del carrusel */
+}
+
+.flechas-carrusel {
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+a{text-decoration: none;}
+a i{opacity: 0.7;}
+
+/* Agregué estilos para las flechas para mayor claridad */
+.flechas-carrusel i {
+    color: white; /* Color de las flechas */
+    font-size: 24px; /* Tamaño de la fuente de las flechas */
+    /* Otros estilos para las flechas */
+    padding-right: 45px;
+}
+
+#tarjetaCarrusel-1{background-color:blue;}
+#tarjetaCarrusel-2{background-color: black;}
+#tarjetaCarrusel-3{background-color:red;}
+#tarjetaCarrusel-4{background-color:green;}
+
+#contePuntos{display: flex;
+    justify-content: center;
+    }
+
+#contePuntos a {font-size: 1.5em;}
+
+.productosPrincipales{
+    
+    border-bottom: solid #92BFB1 4px;
+    border-top: solid #92BFB1 4px;
+    background-color: #DAD6DD;
+}
+
+.TituloSeccion{display: flex;
+justify-content: center;
+margin: 0%;}
+
+.ProductoSeccion{margin: 10px;
+border: solid 1px black;
+width: 25%;
+height: 300px;
+background-color: white;}
+
+.ProductoSeccion h5{margin: 0%;}
+
+.ProductoSeccion p{margin: 0%;}
+ 
+.textoProducto{height: 40%; display: flex;
+flex-direction: column;
+}
+
+.imagenProducto{margin: auto;border: solid black 1px;height: 70%;}
