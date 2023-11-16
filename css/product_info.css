@@ -87,8 +87,8 @@ nav {
     padding: 20px;
     background-color: #DAD6D6;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    
+    flex-direction: column;
 }
 
 .info-description2 {
@@ -142,4 +142,10 @@ nav {
     align-items: center;
     font-size: 13px;
     background-color: #4f86c6;
+}
+
+.imgCont img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
