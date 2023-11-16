@@ -1,0 +1,158 @@
+body{
+    margin: 0px;
+    background: rgb(225, 218, 218);
+}
+
+nav {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    width: 20px;
+    height: 20px;
+}
+
+.search-bar {
+    background-color: solid white;
+    justify-content: center;
+    width: 300px; /* Puedes ajustar este valor según tus necesidades */
+    padding: 10px; /* Puedes ajustar el relleno según tus preferencias */
+    font-size: 16px; /* Puedes ajustar el tamaño de la fuente según tus preferencias */
+}
+
+.button-nav {
+    border: 2px solid #333; /* Ajusta el grosor y el color del borde según tus preferencias */
+    padding: 10px; /* Ajusta el relleno del botón según tus preferencias */
+    margin-left: 10px; /* Ajusta el margen del botón según tus preferencias */
+    margin-right: 10px; /* Ajusta el margen del botón según tus preferencias */
+    margin-top: 7px;
+    margin-bottom: 7px;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    background-color: transparent; /* Fondo transparente para que el borde sea visible */
+    color: #333; /* Color del texto en el botón*/
+    font-size: 14px; /* Tamaño de la fuente en el botón */
+    width: 20%;
+    border-radius: 13px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuenta-carrito{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-1-level{background-color: #1c9b9d }
+
+.nav-2-level{background-color: #92babf;}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 20px;   
+    background: rgb(225, 218, 218);
+    }
+
+
+/* LISTA PRODUCTOS */
+.contenedorProductos {
+    width: 60%;
+    border: 2px solid #000000;
+    border-radius: 5px; /* vertices en curva */
+    padding: 20px;
+    box-sizing:content-box
+}
+
+.listaProductos {
+    display:list-item;
+    list-style-type: none;
+    margin: 0px;
+    padding: 20px; 
+}
+
+.producto {
+    margin: 15px;
+    padding: 4px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 800px;
+    max-height: 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+.infoProducto{
+    padding: 80px;
+}
+
+.producto:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.imgProducto {
+    padding: 30px;
+    width: 180px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.infoProducto{
+    align-items: center; 
+}
+
+/* RESUMEN DE COMPRA */
+.resumenCompra {
+    color: #333;
+    width: 35%;
+    height:fit-content;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+.contenedorResumen{
+    display: flex;
+    padding: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.resProductos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resEnvio{
+    display: flex;
+    justify-content: space-around;
+}
+
+.resTotal{
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
