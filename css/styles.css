@@ -245,8 +245,16 @@ a i {
    border-bottom: 1px black solid;
     height: 70%;
     border-top-left-radius: 13px;
-    border-top-right-radius: 13px
+    border-top-right-radius: 13px;
+    overflow: hidden; 
+    justify-content: center;
+    align-items: center;
+    
 }
+
+.imagenProducto img {width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción original */
+    display: block; }
 
 .categorias {
     display: flex;
@@ -274,7 +282,7 @@ a i {
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 
@@ -288,6 +296,7 @@ a i {
 }
 
 
+
 .item-lista-mas-vendidos:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     /* Establece un gradiente de difuminado */
@@ -297,12 +306,11 @@ a i {
 
 
 .item-lista-mas-vendidos img {
-    height: 230px;
+    height: 150px;
     margin: 3px;
-    width: 230px;
-
-    display: flex;
-    flex-direction: column;
+    width: 150px;
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción original */
+    display: block; 
     
 }
 
