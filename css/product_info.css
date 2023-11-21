@@ -16,6 +16,14 @@ nav {
     justify-content: flex-start;
 }
 
+.icon-title{display: flex;
+flex-direction: row;
+justify-content: center;}
+
+.icon-title h3{padding-left: 30px;
+    font-family: 'MiFuentePersonalizada', sans-serif;}
+
+
 .search-bar {
     background-color: solid  white;
     justify-content: center;
@@ -42,18 +50,23 @@ nav {
     align-items: center;
 }
 
-.cuenta-carrito{
+.cuenta-carrito {
     display: flex;
     justify-content: flex-end;
 }
 
-
-.nav-1-level{
-    background-color: #ff6201 
+.cuenta-carrito img {
+    height: 50px;
+    width: 50px;
+    padding: 5px;
 }
 
-.nav-2-level{
-    background-color: #ff6201;
+.nav-1-level {
+    background-color: rgb(246, 94, 43);
+}
+
+.nav-2-level {
+    background-color:  rgb(246, 94, 43);
 }
 
 .img-containter{
