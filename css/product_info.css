@@ -1,6 +1,6 @@
-body{
+body {
     margin: 0px;
-    background-color:#fff6ee;
+    background-color: rgb(225, 218, 218)
 }
 
 nav {
@@ -11,20 +11,43 @@ nav {
 
 }
 
+@font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url('/assets/carbon\ phyber.otf') format('opentype');
+    /* Puedes agregar más formatos de fuente según sea necesario (e.g., woff, woff2) */
+}
+
+@font-face {
+    font-family: 'MiFuentePersonalizada2';
+    src: url('/assets/duepuntozero_regular.otf') format('opentype');
+    /* Puedes agregar más formatos de fuente según sea necesario (e.g., woff, woff2) */
+}
+
+@font-face {
+    font-family: 'MiFuentePersonalizada3';
+    src: url('/assets/duepuntozero_regular.otf') format('opentype');
+    /* Puedes agregar más formatos de fuente según sea necesario (e.g., woff, woff2) */
+}
+
+
 .logo {
     display: flex;
     justify-content: flex-start;
     height: 50px;
     width: 50px;
+
 }
 
-.icon-title{display: flex;
-flex-direction: row;
-justify-content: center;}
+.icon-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
-.icon-title h3{padding-left: 30px;
-    font-family: 'MiFuentePersonalizada', sans-serif;}
-
+.icon-title h3 {
+    padding-left: 30px;
+    font-family: 'MiFuentePersonalizada', sans-serif;
+}
 
 .search-bar {
     background-color: solid white;
@@ -41,22 +64,29 @@ justify-content: center;}
     height: 40px;
 }
 
-
 .button-nav {
-    border: 2px solid #333; /* Ajusta el grosor y el color del borde según tus preferencias */
-    padding: 10px; /* Ajusta el relleno del botón según tus preferencias */
-    margin-left: 10px; /* Ajusta el margen del botón según tus preferencias */
-    margin-right: 10px; /* Ajusta el margen del botón según tus preferencias */
-    margin-top: 7px;
-    margin-bottom: 7px;
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    background-color: #faa300;
-    color: white; /* Color del texto en el botón */
-    font-size: 14px; /* Tamaño de la fuente en el botón */
+    border: 2px solid #333;
+    /* Ajusta el grosor y el color del borde según tus preferencias */
+    padding: 10px;
+    /* Ajusta el relleno del botón según tus preferencias */
+    margin: 5px;
+    /* Ajusta el margen del botón según tus preferencias */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
+    background-color: #e67f0d;
+    /* Fondo transparente para que el borde sea visible */
+    color: white;
+    border: solid black 1px;
+    /* Color del texto en el botón */
+    font-size: 14px;
+    /* Tamaño de la fuente en el botón */
     width: 20%;
     border-radius: 13px;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease;
+    font-family: 'MiFuentePersonalizada3', sans-serif;
+    font-size: medium;
 }
 
 .cuenta-carrito {
@@ -75,31 +105,33 @@ justify-content: center;}
 }
 
 .nav-2-level {
-    background-color:  rgb(246, 94, 43);
+    background-color: rgb(246, 94, 43);
 }
 
-.img-containter{
+.img-containter {
     width: 60%;
     height: 200px;
     margin: 30px auto;
     display: flex;
-    justify-content: space-between; /* Para alinear los elementos a los lados */
+    justify-content: space-between;
+    /* Para alinear los elementos a los lados */
     color: white;
 }
 
-.imgCont{
+.imgCont {
     background-color: #dad6d6;
     flex: 1;
     margin: 10px;
     border-radius: 10px;
 }
 
-.info-container{
+.info-container {
     width: 60%;
     height: 400px;
     margin: 30px auto;
     display: flex;
-    justify-content: space-between; /* Para alinear los elementos a los lados */
+    justify-content: space-between;
+    /* Para alinear los elementos a los lados */
     color: black;
 }
 
@@ -155,12 +187,16 @@ justify-content: center;}
     align-items: center;
 }
 
-.buyButton {
+.buyButton,a .buyButton {
     margin-top: 5px;
-    border: 2px solid #333; /* Ajusta el grosor y el color del borde según tus preferencias */
-    padding: 10px; /* Ajusta el relleno del botón según tus preferencias */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    color: #DAD6D6; /* Color del texto en el botón */
+    border: 2px solid #333;
+    /* Ajusta el grosor y el color del borde según tus preferencias */
+    padding: 10px;
+    /* Ajusta el relleno del botón según tus preferencias */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
+    color: #DAD6D6;
+    /* Color del texto en el botón */
     width: 80%;
     border-radius: 13px;
     justify-content: center;

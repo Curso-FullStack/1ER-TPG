@@ -3,41 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/resumenCompra.css" rel="stylesheet">
+    <link href="../css/resumenCompra.css" rel="stylesheet">
     <title>Mi carrito</title>
 </head>
 <body>
 
-    <header>
-        <nav class="nav-1-level">
-            <div>
-                <a class="logo" href="">
-                    <img src="" alt="Logo de la empresa"> <!-- Logo que nos lleva a la pagina principal siempre -->
-                </a>
-            </div>
-            
-            <div class="search-bar">
-                <input type="text" name="cadena-de-busqueda" placeholder="Buscar un producto">
-                <button type="submit"> <img src="assets/search.jpg" alt=""></button>
-            </div>
+    <nav class="nav-1-level">
+        <div class="icon-title">
+            <a class="logo" href="/index.html">
+                <img src="/assets/main-icon.svg" alt="Logo de la empresa">
+                <!-- Logo que nos lleva a la pagina principal siempre -->
+            </a>
+            <h3>MARKETPLACE</h3>
+        </div>
+        <div class="search-bar">
+            <input type="text" name="cadena-de-busqueda" placeholder="Buscar un producto">
 
-            <a class="logo" href="./index.html">
-                <img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" alt="Mi carrito">
+        </div>
+
+        <div class="cuenta-carrito">
+            <a href="">
+                <img src="/assets/shop-cart-icon.svg" alt="Mi carrito">
+
             </a>
 
-            <a class="logo" href="">
-                <img src="https://w7.pngwing.com/pngs/527/663/png-transparent-logo-person-user-person-icon-rectangle-photography-computer-wallpaper.png" alt="Mi cuenta">
+            <a href="">
+                <img src="/assets/user-icon.svg" alt="Mi cuenta">
             </a>
+        </div>
+    </nav>
+    <nav class="nav-2-level">
 
-            </div>
-        </nav>
-        <nav class="nav-2-level">
-            <button type="submit" class="button-nav">Categorias</button>
-            <button type="submit" class="button-nav">Ofertas</button>
-            <button type="submit" class="button-nav">Servicios</button>
-            <button type="submit" class="button-nav">Seguros</button>
-        </nav>
-    </header>
+        <button type="submit" class="button-nav">Categorias</button>
+        <button type="submit" class="button-nav">Ofertas</button>
+        <button type="submit" class="button-nav">Servicios</button>
+        <button type="submit" class="button-nav">Seguros</button>
+
+    </nav>
+</header>
 
     <main>
         <section class="contenedorProductos"> <!-- Productos agregados al carrito -->

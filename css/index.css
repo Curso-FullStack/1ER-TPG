@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    background-color: rgb(225, 218, 218);
 }
 
 @font-face {
@@ -21,7 +22,7 @@ body {
 }
 
 main{
-    background-color:#fff6ee}
+    background-color: rgb(225, 218, 218);}
 
 
 nav {
