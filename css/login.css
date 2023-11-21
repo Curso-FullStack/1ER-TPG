@@ -30,3 +30,18 @@ body {
   }
   input[type="submit"]:hover {
     background-color: #0056b3;
+  }
+  .login-container .forgot-password,
+  .login-container .signup {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .login-container .signup a,
+  .login-container .forgot-password a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  .login-container .signup a:hover,
+  .login-container .forgot-password a:hover {
+    text-decoration: underline;
+  }
