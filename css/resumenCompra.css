@@ -21,10 +21,6 @@ body{
     /* Puedes agregar más formatos de fuente según sea necesario (e.g., woff, woff2) */
 }
 
-main{
-    background-color:#fff6ee}
-
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -48,7 +44,6 @@ justify-content: center;}
 .icon-title h3{padding-left: 30px;
     font-family: 'MiFuentePersonalizada', sans-serif;}
 
-
 .search-bar {
     background-color: solid white;
     width: 400px;
@@ -63,8 +58,6 @@ justify-content: center;}
     width: 400px;
     height: 40px;
 }
-
-
 
 .button-nav {
     border: 2px solid #333;
@@ -91,8 +84,6 @@ justify-content: center;}
     font-size: medium;
 }
 
-
-
 .button-nav:hover {
     transform: scale(1.05);
     /* Ajusta el factor de escala según tus preferencias */
@@ -118,14 +109,15 @@ justify-content: center;}
 }
 
 
-main {
-    display: flex;
-    justify-content: space-between;
-    margin: 30px;
-    padding: 20px;   
-    background: rgb(225, 218, 218);
-    }
 
+
+main {
+    font-family: 'MiFuentePersonalizada';
+    background-color:#fff6ee; 
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
 
 /* LISTA PRODUCTOS */
 .contenedorProductos {
@@ -133,7 +125,7 @@ main {
     border: 2px solid #000000;
     border-radius: 5px; /* vertices en curva */
     padding: 20px;
-    box-sizing:content-box
+    box-sizing:content-box;
 }
 
 .listaProductos {
@@ -144,21 +136,14 @@ main {
 }
 
 .producto {
-    margin: 15px;
-    padding: 4px;
-    background-color: #ffffff;
-    border-radius: 15px;
-    text-align: left;
-    justify-content: flex-start;
-    align-items: center;
     max-width: 800px;
-    max-height: 300px;
-    display: flex;
-    flex-direction: row;
-}
-
-.infoProducto{
-    padding: 80px;
+    max-height: 150px; 
+    margin: 15px;
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px; /* Aplica un radio de borde de 15 píxeles para redondear las esquinas */
+    display: flex; /* Establece el elemento como un contenedor flexible para usar propiedades flexbox */
+    align-items: center; /* Centra el contenido verticalmente cuando está dentro de un contenedor flex */
 }
 
 .producto:hover {
@@ -166,52 +151,81 @@ main {
     cursor: pointer;
 }
 
-.imgProducto {
-    padding: 30px;
-    width: 180px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 20px 20px 20px 20px;
+.productoImg {
+    width: 180px; /* Ancho de la imagen*/
+    height: 180px; /* Altura de la imagen*/
+    object-fit: cover; /* Escala y recorta la imagen para ajustarse al contenedor manteniendo su proporción */
+    border-radius: 5px 5px 5px 5px; /* Aplica un radio de borde de 20 píxeles a todas las esquinas */
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga del contenedor */
 }
 
-.infoProducto{
-    align-items: center; 
+.productoImg img {
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción original */
+    display: block; /* Establece el elemento como un elemento de bloque, ocupando todo el ancho disponible */
+}
+
+.infoProducto {
+    padding: 30px; /* Añade un relleno interno de 80 píxeles alrededor del contenido */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.infoProducto {
+    padding: 80px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cantidad {
+    display: flex;
+    align-items: center;
+}
+
+.cantidad button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px;
+    width: 20px; /* Ancho de la imagen*/
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px; /* Añade un margen entre los botones */
+}
+
+.cantidad p {
+    font-size: 18px;
+    margin: 0 5px; /* Añade un margen entre la cantidad y los botones */
 }
 
 /* RESUMEN DE COMPRA */
 .resumenCompra {
-    color: #333;
-    width: 35%;
-    height:fit-content;
-    border: 2px solid #000000;
-    border-radius: 5px;
-    padding: 20px;
-    box-sizing: border-box; 
+    color: #333; /*color del texto*/
+    width: 30%; /*Establece el ancho del contenedor*/
+    height: fit-content; /* Ajusta la altura del contenedor*/
+    border: 2px solid #000000; /* Establece un borde sólido de 2 píxeles en color negro */
+    border-radius: 5px; /* Aplica un radio de borde de 5 píxeles para redondear las esquinas */
+    padding: 20px; /* Añade un relleno interno de 20 píxeles alrededor del contenido */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total del contenedor */
 }
 
 .contenedorResumen{
     display: flex;
-    padding: 25px;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-between;
+    padding: 25px; 
 }
 
-.resProductos {
+.infoResumen {
     display: flex;
     justify-content: space-between;
 }
 
-.resEnvio{
-    display: flex;
-    justify-content: space-around;
-}
-
-.resTotal{
-    display: flex;
-    justify-content: space-around;
-}
-
-.button {
+.button {    
+    font-family: 'MiFuentePersonalizada';
     background-color: #007bff;
     color: #fff;
     padding: 10px 20px;
