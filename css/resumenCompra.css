@@ -166,22 +166,14 @@ main {
 }
 
 .infoProducto {
-    padding: 30px; /* Añade un relleno interno de 80 píxeles alrededor del contenido */
+    padding: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-}
-
-.infoProducto {
-    padding: 80px;
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .cantidad {
     display: flex;
-    align-items: center;
 }
 
 .cantidad button {
@@ -215,7 +207,7 @@ main {
 .contenedorResumen{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 25px; 
 }
 
